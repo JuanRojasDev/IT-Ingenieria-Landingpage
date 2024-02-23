@@ -1183,3 +1183,29 @@ html {
 		font-size: 1.6rem;
 	}
 }
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-toggle:before {
+    content: "\2630";
+    font-size: 2rem;
+  }
+
+  .menu-toggle.active:before {
+    content: "\2715";
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .menu-items.active {
+    display: block;
+  }
+}
